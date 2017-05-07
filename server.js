@@ -1,3 +1,3 @@
-let server = require('app.js');
+let server = require('./app');
 
-server.start(process.env.PORT)
+server.start(process.env.PORT);

@@ -12,9 +12,6 @@ module.exports = {
   var appDir = path.dirname(require.main.filename);
 
 
-    app.set("view engine", "ejs");
-    app.set('views', appDir);
-
 
     app.get('/', (request,response) => {
       response.sendFile(__dirname+'/index.html');
@@ -23,6 +20,15 @@ module.exports = {
       response.sendFile(__dirname+'/index.html');
     })
 
+    // var app = module.exports = express();
+    //
+    // app.use(vhost('*.this-is-my-home.com', main)); // Serves all subdomains via Redirect app
+    //
+    // /* istanbul ignore next */
+    // if (!module.parent) {
+    //   app.listen(3000);
+    //   console.log('Express started on port 3000');
+    // }
 
-
+  }
 }
